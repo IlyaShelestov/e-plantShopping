@@ -169,6 +169,13 @@ body {
 .cart {
   color: white;
   display: flex;
+  position: relative;
+}
+.cart-total-amount {
+  position: absolute;
+  left: 39%;
+  top: 23%;
+  font-size: 30px;
 }
 .cart_quantity_count {
   margin-top: 16px;
