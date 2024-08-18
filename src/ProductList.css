@@ -81,6 +81,10 @@ body {
     z-index: 1;
 }
 
+.category-name {
+    text-align: center;
+}
+
 .product-title {
     font-weight: bold;
     margin-bottom: 10px;
