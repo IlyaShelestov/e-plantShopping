@@ -291,6 +291,12 @@ function ProductList() {
       [plant.name]: true,
     }));
   };
+  const handleRemoveFromCart = (name) => {
+    setAddedToCart((prevState) => ({
+      ...prevState,
+      [name]: false,
+    }));
+  };
   return (
     <div>
       <div className="navbar" style={styleObj}>
@@ -387,7 +393,10 @@ function ProductList() {
           ))}
         </div>
       ) : (
-        <CartItem onContinueShopping={handleContinueShopping} />
+        <CartItem
+          onContinueShopping={handleContinueShopping}
+          onPlantRemoving={handleRemoveFromCart}
+        />
       )}
     </div>
   );
