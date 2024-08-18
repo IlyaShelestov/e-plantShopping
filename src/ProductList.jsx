@@ -360,7 +360,7 @@ function ProductList() {
                       alt={plant.name}
                     />
                     <div className="product-title">{plant.name}</div>
-                    <div>{plant.description}</div>
+                    <div><i>{plant.description}</i></div>
                     <p className="product-price">{plant.cost}</p>
                     {addedToCart[plant.name] ? (
                       <button
