@@ -170,11 +170,11 @@ body {
   color: white;
   display: flex;
   position: relative;
+  align-items: center;
+  justify-content: center;
 }
 .cart-total-amount {
   position: absolute;
-  left: 39%;
-  top: 23%;
   font-size: 30px;
 }
 .cart_quantity_count {
